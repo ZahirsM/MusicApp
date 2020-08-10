@@ -1,9 +1,11 @@
-package com.example.musicapp.model
+package com.example.musicapp.data.model
 
 
 import android.os.Parcelable
+import com.example.musicapp.utils.TYPE
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
+import kotlinx.android.parcel.IgnoredOnParcel
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
@@ -11,6 +13,9 @@ import kotlinx.android.parcel.Parcelize
 data class Artist(
     val artist: Data = Data()
 ) : Parcelable {
+
+    @IgnoredOnParcel
+    var viewType = TYPE.ITEM
 
     @Parcelize
     @JsonClass(generateAdapter = true)
@@ -37,4 +42,5 @@ data class Artist(
         @Json(name = "updated_time")
         val updatedTime: String? = null
     ) : Parcelable
+
 }

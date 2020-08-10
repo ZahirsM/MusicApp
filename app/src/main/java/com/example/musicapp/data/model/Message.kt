@@ -1,9 +1,7 @@
-package com.example.musicapp.model
+package com.example.musicapp.data.model
 
 
 import android.os.Parcelable
-import com.example.musicapp.model.Body
-import com.example.musicapp.model.Header
 import com.squareup.moshi.JsonClass
 import kotlinx.android.parcel.Parcelize
 

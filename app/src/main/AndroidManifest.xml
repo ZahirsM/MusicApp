@@ -11,8 +11,8 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".HomeActivity">
+        android:theme="@style/Theme.MyApp">
+        <activity android:name="com.example.musicapp.ui.view.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

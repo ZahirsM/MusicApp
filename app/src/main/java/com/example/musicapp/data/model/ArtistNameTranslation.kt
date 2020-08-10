@@ -1,4 +1,4 @@
-package com.example.musicapp.model
+package com.example.musicapp.data.model
 
 
 import android.os.Parcelable

@@ -1,4 +1,4 @@
-package com.example.musicapp.model
+package com.example.musicapp.data.model
 
 
 import android.os.Parcelable
@@ -8,9 +8,7 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 @JsonClass(generateAdapter = true)
-data class Header(
-    @Json(name = "status_code")
-    val statusCode: Int? = null,
-    @Json(name = "execute_time")
-    val executeTime: Double? = null
+data class ArtistCredits(
+    @Json(name = "artist_list")
+    val artistList: List<Artist> = listOf()
 ) : Parcelable
